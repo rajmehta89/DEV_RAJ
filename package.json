@@ -1,0 +1,10 @@
+{
+  "name": "project-portfolio",
+  "private": true,
+  "scripts": {
+    "build": "npm ci --prefix portfolio-next && npm run build --prefix portfolio-next",
+    "dev": "npm run dev --prefix portfolio-next",
+    "start": "npm run start --prefix portfolio-next",
+    "lint": "npm run lint --prefix portfolio-next"
+  }
+}
