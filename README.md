@@ -31,6 +31,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy this app is to import the repo on [Vercel](https://vercel.com/new). Use **Root Directory** `.` (repository root), **Framework Preset** Next.js, and leave **Output Directory** empty (do not set it to `public`).
+This repository is a root-level Next.js App Router project.
 
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Use these settings in [Vercel](https://vercel.com/new):
+
+- Root Directory: `.` (repository root)
+- Framework Preset: `Next.js`
+- Install Command: `npm install`
+- Build Command: `npm run build`
+- Output Directory: leave empty
+- Node.js: `20.x` or newer
+
+The homepage entry file is [src/app/page.tsx](./src/app/page.tsx), and the app-level fallback page is [src/app/not-found.tsx](./src/app/not-found.tsx).
+
+If Vercel ever shows a 404 again, the fastest checks are:
+
+1. Confirm the deployment was created successfully in the Vercel Deployments tab.
+2. Confirm the project Root Directory is still `.`.
+3. Confirm the Framework Preset is still `Next.js`.
+4. Redeploy the latest commit after any Vercel setting change.

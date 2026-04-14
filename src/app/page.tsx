@@ -155,7 +155,9 @@ export default function Home() {
               <p className="mt-3 rounded-lg border border-[var(--primary)]/40 bg-[var(--primary)]/10 p-3 text-sm text-green-300">
                 Impact: {project.impact}
               </p>
-              <p className="mt-3 text-sm italic text-[var(--muted)]">"{project.feedback}"</p>
+              <p className="mt-3 text-sm italic text-[var(--muted)]">
+                &quot;{project.feedback}&quot;
+              </p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span key={tag} className="rounded-full border border-[color:var(--border)] px-2 py-1 text-xs text-slate-300">
